@@ -1,3 +1,7 @@
+<script>
+	import pencil from '$lib/assets/pencil-icon.png';
+</script>
+
 <nav>
 	<a href="/">File</a>
 	<a href="/insert">Insert</a>
@@ -9,7 +13,7 @@
 	<a href="/review">Review</a>
 	<a href="/view">View</a>
 	<a href="/help">Help</a>
-	<img src="src/public/pencil-icon.png" width="15px" height="15px" alt="pencil icon" />
+	<img src={pencil} width="15px" height="15px" alt="pencil icon" />
 </nav>
 
 <style>

@@ -2,6 +2,15 @@
 	import '../app.css';
 	import Nav from '../lib/nav.svelte';
 	import { time, elapsed } from '../stores.js';
+	import save from '$lib/assets/save-icon.png';
+	import undo from '$lib/assets/undo-icon.png';
+	import expand from '$lib/assets/expand-down.png';
+	import redo from '$lib/assets/redo-icon.png';
+	import ddown from '$lib/assets/double-down.png';
+	import avatar from '$lib/assets/avatar-icon.png';
+	import min from '$lib/assets/minimize-icon.png';
+	import max from '$lib/assets/maximize-icon.png';
+	import close from '$lib/assets/close-icon.png';
 
 	const formatter = new Intl.DateTimeFormat('en', {
 		hour12: true,
@@ -21,11 +30,11 @@
 		</label>
 	</p>
 	<div class="icon-container">
-		<img src="src/public/save-icon.png" width="24px" height="24px" alt="save icon" />
-		<img src="src/public/undo-icon.png" width="24px" height="24px" alt="undo icon" />
-		<img src="src/public/expand-down.png" width="12px" height="12px" alt="down icon" />
-		<img src="src/public/redo-icon.png" width="24px" height="24px" alt="redo icon" />
-		<img src="src/public/double-down.png" width="24px" height="24px" alt="two dowm icon" />
+		<img src={save} width="24px" height="24px" alt="save icon" />
+		<img src={undo} width="24px" height="24px" alt="undo icon" />
+		<img src={expand} width="16px" height="16px" alt="down icon" />
+		<img src={redo} width="24px" height="24px" alt="redo icon" />
+		<img src={ddown} width="24px" height="24px" alt="two dowm icon" />
 	</div>
 
 	<p>Jon Ellwood - Resume - Last Saved</p>
@@ -38,10 +47,10 @@
 		</div>
 	</form>
 	<p class="icon-container-right">
-		<img src="src/public/avatar-icon.png" width="24px" height="24px" alt="avatar icon - get it?" />
-		<img src="src/public/minimize-icon.png" width="24px" height="24px" alt="minimize-icon" />
-		<img src="src/public/maximize-icon.png" width="24px" height="24px" alt="maximize-icon" />
-		<img src="src/public/close-icon.png" width="24px" height="24px" alt="close icon" />
+		<img src={avatar} width="24px" height="24px" alt="avatar icon - get it?" />
+		<img src={min} width="24px" height="24px" alt="minimize-icon" />
+		<img src={max} width="24px" height="24px" alt="maximize-icon" />
+		<img src={close} width="24px" height="24px" alt="close icon" />
 	</p>
 </div>
 <Nav />
