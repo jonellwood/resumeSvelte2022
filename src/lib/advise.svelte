@@ -10,9 +10,9 @@
 
 		const data = await response.text();
 		const blurg = JSON.parse(data);
-		console.log(blurg);
+		// console.log(blurg);
 		const blag = blurg.slip.advice;
-		console.log(blag);
+		// console.log(blag);
 
 		return blag;
 	}
@@ -31,3 +31,13 @@
 	{/await}
 	<button on:click={handleClick}>Get advise</button>
 </div>
+
+<style>
+	button {
+		line-height: 1.5;
+		margin: 10px 0 0 0;
+	}
+	button:hover {
+		cursor: pointer;
+	}
+</style>

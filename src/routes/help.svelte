@@ -2,6 +2,7 @@
 	import Advise from '../lib/advise.svelte';
 	import Hr from '../lib/hr.svelte';
 	import Jokes from '../lib/jokes.svelte';
+	import Quote from '../lib/quote.svelte';
 </script>
 
 <div class="white-box-in-middle-to-look-like-piece-of-paper">
@@ -18,8 +19,10 @@
 	</div>
 	<div class="help">
 		<p>
-			This is from a fun little course by <a href="https://wesbos.com"><b>Wes Bos </b></a>. And a
-			little fun is always helpful right?
+			This is from a fun little course by <a href="https://wesbos.com" target="_blank"
+				><b>Wes Bos </b></a
+			>. And a little fun is always helpful right? Jokes are courtest of the
+			<a href="https://icanhazdadjoke.com/api" target="_blank"><b>icanhasdadjokes API </b></a>
 		</p>
 	</div>
 	<Hr />
@@ -30,7 +33,23 @@
 	</div>
 	<div class="help">
 		<p>
-			Advise courtesy of <a href="https://api.adviceslip.com/"><b>Advise Slip API</b></a>
+			Advise courtesy of <a href="https://api.adviceslip.com/" target="_blank"
+				><b>Advise Slip API</b></a
+			>
+		</p>
+	</div>
+	<Hr />
+	<div class="help">
+		<div class="wrapper">
+			<Quote />
+		</div>
+	</div>
+	<div class="help">
+		<p>
+			Quotes courtesy of <a
+				href="https://programming-quotes-api.herokuapp.com/index.html"
+				target="_blank"><b>Programming Quotes API</b></a
+			>
 		</p>
 	</div>
 </div>
