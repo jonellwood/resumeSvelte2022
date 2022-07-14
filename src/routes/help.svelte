@@ -1,4 +1,5 @@
 <script>
+	import Advise from '../lib/advise.svelte';
 	import Hr from '../lib/hr.svelte';
 	import Jokes from '../lib/jokes.svelte';
 </script>
@@ -17,11 +18,21 @@
 	</div>
 	<div class="help">
 		<p>
-			This is from a fun little course by <a href="https://wesbos.com">Wes Bos</a>. And a little fun
-			is always helpful right?
+			This is from a fun little course by <a href="https://wesbos.com"><b>Wes Bos </b></a>. And a
+			little fun is always helpful right?
 		</p>
 	</div>
 	<Hr />
+	<div class="help">
+		<div class="wrapper">
+			<Advise />
+		</div>
+	</div>
+	<div class="help">
+		<p>
+			Advise courtesy of <a href="https://api.adviceslip.com/"><b>Advise Slip API</b></a>
+		</p>
+	</div>
 </div>
 
 <style>

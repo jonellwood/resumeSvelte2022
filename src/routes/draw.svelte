@@ -1,4 +1,5 @@
 <script>
+	import Draw from '../lib/assets/draw.svelte';
 	import Hr from '../lib/hr.svelte';
 </script>
 
@@ -11,6 +12,7 @@
 	</div>
 	<div class="draw">
 		<h1>Nothing here yet. Maybe a fun little drawing web app or something?</h1>
+		<!-- <Draw /> -->
 	</div>
 	<Hr />
 </div>
