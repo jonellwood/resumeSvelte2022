@@ -1,6 +1,6 @@
 <script>
-	let jokeButton = document.querySelector('.getJoke');
-	let jokeHolder = document.querySelector('.joke p');
+	// let jokeButton = document.querySelector('.getJoke');
+	// let jokeHolder = document.querySelector('.joke p');
 
 	let buttonText = [
 		'Ugh',
